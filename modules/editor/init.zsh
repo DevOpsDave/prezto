@@ -255,6 +255,10 @@ else
   bindkey -M vicmd "/" history-incremental-search-forward
 fi
 
+# What I am used to in bash
+# ctrl-r starts searching history backward
+bindkey '^r' history-incremental-search-backward
+
 #
 # Emacs and Vi Key Bindings
 #

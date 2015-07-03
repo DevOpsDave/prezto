@@ -11,3 +11,14 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Reload the shell
+alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
+alias zshrc="vim ~/.zshrc && reload"
+alias ccs-gerrit="cd ~/Documents/code/ccs-gerrit"
+
+# Reload .zprofile
+source ~/.zprofile
+
+# For Tmux
+DISABLE_AUTO_TITLE=true
