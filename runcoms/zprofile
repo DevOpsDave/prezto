@@ -74,6 +74,7 @@ fi
 TMPPREFIX="${TMPDIR%/}/zsh"
 
 # I like to organize custom settings in ~/.zprofile.d
+setopt null_glob
 for file in ~/.zprofile.d/*.zsh; do
-  . "$file"
+  [[ -e $file ]] && . $file 
 done
